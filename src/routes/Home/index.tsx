@@ -58,8 +58,6 @@ class Player {
 ======================= */
 
 class Heart {
-  private canvas: HTMLCanvasElement;
-
   size = Math.random() * 20 + 20;
   x: number;
   y: number;
@@ -67,7 +65,6 @@ class Heart {
   color = `hsl(${Math.random() * 20 + 340},100%,60%)`;
 
   constructor(canvas: HTMLCanvasElement) {
-    this.canvas = canvas;
     this.x = Math.random() * (canvas.width - this.size);
     this.y = -this.size;
   }

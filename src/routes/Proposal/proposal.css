@@ -117,8 +117,13 @@
   background: linear-gradient(135deg, #ff4d6d, #ff758f);
   color: #fff;
 }
+
+.no-container {
+  width: 120px;
+  height: 45px;
+}
 #no {
-  /* left: 50%; */
+  left: calc(50% + 4px);
   position: absolute;
   background: rgba(255, 255, 255, 0.9);
   color: #777;

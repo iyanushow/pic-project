@@ -85,7 +85,7 @@ export default function Proposal() {
               Yes 💖
             </button>
 
-            <div>
+            <div className="no-container">
               <button
                 id="no"
                 className="proposal-btn no-btn"

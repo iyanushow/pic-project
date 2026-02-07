@@ -1,0 +1,90 @@
+.letter-page {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.open-btn {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background: white;
+  color: #ff4d6d;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
+  transition: all 0.3s ease;
+}
+
+.open-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 77, 109, 0.6);
+  background: #fff0f3;
+}
+
+.letter-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.love-letter {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background-image: repeating-linear-gradient(
+    white 0px,
+    white 24px,
+    #e9ecef 25px
+  );
+  line-height: 25px;
+  font-family: 'Dancing Script', cursive;
+  transform: scale(0.8);
+  transition: transform 0.5s ease;
+}
+
+.letter-overlay .love-letter {
+  transform: scale(1);
+}
+
+.love-letter h2 {
+  font-size: 2.5rem;
+  color: #ff4d6d;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.love-letter p {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #aaa;
+  background: none;
+  border: none;
+}
+
+.close-btn:hover {
+  color: #333;
+}

@@ -1,0 +1,91 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* --primary-color: #ff4d6d;
+  --secondary-color: #ff8fa3;
+  --accent-color: #c9184a;
+  --bg-gradient: linear-gradient(135deg, #fff0f3 0%, #ffccd5 100%);
+  --white: #ffffff;
+  --font-heading: 'Great Vibes', cursive;
+  --font-body: 'Poppins', sans-serif; */
+
+  --primary-color: #4cc9f0; /* icy blue */
+  --secondary-color: #90dbf4; /* soft frost */
+  --accent-color: #4361ee; /* cold deep blue */
+  --bg-gradient: linear-gradient(135deg, #e0f7ff 0%, #cfeffd 100%);
+  --white: #ffffff;
+  --font-heading: 'Great Vibes', cursive;
+  --font-body: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: var(--font-body);
+  background: var(--bg-gradient);
+  user-select: none; /* Prevent selection during game */
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

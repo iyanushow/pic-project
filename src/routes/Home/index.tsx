@@ -277,7 +277,7 @@ export default function Home() {
 
       {state === GAME_STATE.START && (
         <div className="screen active">
-          <h1 className="home-title">Hi Babygirl, catch the Love!</h1>
+          <h1 className="home-title">Hi Babygirl, catch my love❤️</h1>
           <p className="subtitle">
             Catch enough hearts to reveal a special question...
           </p>

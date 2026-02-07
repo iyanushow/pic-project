@@ -20,22 +20,19 @@ export default function Proposal() {
   const navigate = useNavigate();
   const [noClickCount, setNoClickCount] = useState(0);
 
-  const onHover = () => {
+  const moveNoButton = () => {
     const card = cardRef.current;
     const noBtn = noRef.current;
 
     if (!noBtn || !card) return;
 
-    const cardRect = card.getBoundingClientRect();
-    const btnRect = noBtn.getBoundingClientRect();
-
-    const maxX = cardRect.width - btnRect.width - 10;
-    const maxY = cardRect.height - btnRect.height - 10;
+    const maxX = card.clientWidth - noBtn.offsetWidth;
+    const maxY = card.clientHeight - noBtn.offsetHeight;
 
     noBtn.style.left = `${Math.random() * maxX}px`;
     noBtn.style.top = `${Math.random() * maxY}px`;
 
-    setNoClickCount(c => (c + 1) % 6);
+    setNoClickCount(c => (c + 1) % noTexts.length);
   };
 
   const onYes = () => {
@@ -88,13 +85,16 @@ export default function Proposal() {
               Yes 💖
             </button>
 
-            <button
-              id="no"
-              onMouseEnter={onHover}
-              className="proposal-btn no-btn"
-              ref={noRef}>
-              {noTexts[noClickCount]} 🙈
-            </button>
+            <div>
+              <button
+                id="no"
+                className="proposal-btn no-btn"
+                onMouseEnter={moveNoButton} // Desktop hover
+                onTouchStart={moveNoButton}
+                ref={noRef}>
+                {noTexts[noClickCount]} 🙈
+              </button>
+            </div>
           </div>
 
           <div className="hint">Our love story will go on forever ✨</div>

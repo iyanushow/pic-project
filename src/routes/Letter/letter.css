@@ -88,3 +88,6 @@
 .close-btn:hover {
   color: #333;
 }
+.letter-title {
+  line-height: 1.02;
+}

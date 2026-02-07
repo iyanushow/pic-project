@@ -58,6 +58,9 @@
   background: rgba(224, 247, 255, 0.9);
   z-index: 20;
   transition: opacity 0.5s ease;
+
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .screen.hidden {

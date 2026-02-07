@@ -16,7 +16,7 @@ export default function Letter() {
             <button className="close-btn" onClick={() => setIsOpen(false)}>
               ×
             </button>
-            <h2>My Sugar Mummy 🌹</h2>
+            <h2 className="letter-title">My Sugar Mummy 🌹</h2>
             <p>
               Just like you found these hidden hearts, you've found the deepest
               parts of my soul.

@@ -92,17 +92,20 @@
 }
 
 .proposal-buttons {
-  position: relative;
-  height: 78px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .proposal-btn {
-  position: absolute;
-  padding: 14px 36px;
+  /* position: absolute; */
+
+  padding: 12px;
+  min-width: 120px;
   border-radius: 40px;
+
   border: none;
   font-size: 16px;
   cursor: pointer;
@@ -110,12 +113,13 @@
 }
 
 #yes {
-  left: 15%;
+  /* left: 15%; */
   background: linear-gradient(135deg, #ff4d6d, #ff758f);
   color: #fff;
 }
 #no {
-  left: 50%;
+  /* left: 50%; */
+  position: absolute;
   background: rgba(255, 255, 255, 0.9);
   color: #777;
 }
